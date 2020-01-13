@@ -1,0 +1,23 @@
+.login {
+  width: 60%;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 30px;
+  @media (max-width: 768px) {
+    width: 85%;
+  }
+  .form-group {
+    margin: 10px 0;
+    .form-control {
+      width: 95%;
+      margin: 10px 0;
+      font-size: 16px;
+      background: none;
+      outline: none;
+      border-radius: 0;
+      border-bottom: 1px solid gray;
+    }
+  }
+}

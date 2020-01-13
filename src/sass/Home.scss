@@ -1,0 +1,71 @@
+@import "../index.scss";
+
+.main-content {
+  display: grid;
+  grid-template-columns: 15% 80%;
+  grid-template-rows: 10% 80vh;
+  grid-template-areas:
+    "list search"
+    "list products";
+  grid-gap: 0 50px;
+  margin-top: 30px;
+  @media (max-width: 1024px) {
+    grid-template-columns: 25% 70%;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-areas:
+      "list"
+      "search"
+      "products";
+    grid-template-columns: 85%;
+    grid-template-rows: 1fr;
+    grid-gap: 20px 0px;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 90%;
+  }
+}
+
+.search {
+  grid-area: search;
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-group {
+  grid-area: list;
+}
+
+.products {
+  grid-area: products;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5% 6%;
+  padding-bottom: 50px;
+  @media (max-width: 1500px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4% 15%;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    margin-top: 10px;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 65%);
+    grid-gap: 2% 0%;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 70%);
+    grid-gap: 25px;
+  }
+}

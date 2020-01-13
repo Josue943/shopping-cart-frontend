@@ -1,0 +1,27 @@
+.register {
+  width: 60%;
+  margin: 40px auto;
+  padding: 20px 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
+  .title {
+    margin-left: -25px;
+  }
+  .form-group {
+    margin: 10px 0;
+    .form-control {
+      margin-top: 5px;
+      width: 90%;
+    }
+  }
+}
+
+form {
+  button {
+    display: block;
+    margin: auto;
+  }
+}

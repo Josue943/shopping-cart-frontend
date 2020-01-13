@@ -1,0 +1,27 @@
+@import "../index.scss";
+
+.list {
+  list-style: none;
+  text-align: center;
+  @media (max-width: 600px) {
+  }
+  .item {
+    background: var(--bg);
+    font-size: 16px;
+    border: 1px gray solid;
+    padding: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: block;
+    &:hover {
+      background: var(--hbg);
+    }
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.active {
+  text-decoration: underline;
+}

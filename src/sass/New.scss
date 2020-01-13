@@ -1,0 +1,72 @@
+.form-container {
+  width: 95%;
+  margin: 40px auto;
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding-top: 20px;
+  @media (max-width: 1024px) {
+    padding-bottom: 20px;
+  }
+  form {
+    flex-basis: 45%;
+    flex-grow: 1;
+    border-radius: 10px;
+    width: 50%;
+    padding: 25px 20px;
+    @media (max-width: 768px) {
+      flex-basis: 85%;
+      width: 100%;
+      align-content: center;
+    }
+    button {
+      @media (max-width: 768px) {
+        margin: 15px auto;
+      }
+    }
+    .form-control {
+      margin: 10px 0;
+    }
+  }
+  .product-card {
+    margin-top: 50px;
+    flex-basis: 40%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+    @media (max-width: 768px) {
+      margin-top: 6px;
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
+    .image-container {
+      flex-basis: 325px;
+      height: 300px;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+      }
+    }
+    .info {
+      margin-left: 20px;
+      margin-top: 50px;
+      flex-basis: 30%;
+      font-size: 18px;
+      @media (max-width: 1338px) {
+        margin-top: 0;
+      }
+      @media (max-width: 1024px) {
+        font-size: 16px;
+        flex-basis: 50%;
+      }
+      @media (max-width: 768px) {
+        margin-top: 30px;
+        font-size: 14px;
+        flex-basis: 30%;
+      }
+    }
+  }
+}

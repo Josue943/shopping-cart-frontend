@@ -1,0 +1,89 @@
+.form-control {
+  flex-basis: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  @media (max-width: 1400px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1024px) {
+    flex-basis: 75%;
+  }
+  @media (max-width: 860px) {
+    flex-basis: 100%;
+  }
+
+  label {
+    flex-basis: 9%;
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    @media (max-width: 1400px) {
+      flex-basis: 12%;
+    }
+    @media (max-width: 1024px) {
+      padding-top: 2%;
+      font-size: 18px;
+      flex-basis: 16%;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 1%;
+      font-size: 18px;
+      flex-basis: 15%;
+    }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  input {
+    flex-basis: 80%;
+    font-size: 16px;
+    padding-left: 15px;
+    outline: none;
+    height: 45px;
+    @media (max-width: 1024px) {
+      flex-basis: 70%;
+      font-size: 15px;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      flex-basis: 77%;
+      font-size: 15px;
+    }
+    @media (max-width: 600px) {
+      flex-basis: 95%;
+      font-size: 13px;
+    }
+  }
+  .fa-search {
+    position: absolute;
+    left: 89%;
+    top: 29%;
+    cursor: default;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.toggle {
+  flex-basis: 12%;
+  text-align: right;
+  padding-bottom: 1.5%;
+  @media (max-width: 1024px) {
+    flex-basis: 19%;
+  }
+  @media (max-width: 850px) {
+    display: none;
+  }
+  button {
+    height: 50px;
+    width: 120px;
+    &:focus {
+      outline-color: var(--hbg);
+    }
+  }
+}
